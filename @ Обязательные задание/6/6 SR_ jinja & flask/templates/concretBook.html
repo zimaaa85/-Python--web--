@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %} {{ book.name }} {% endblock %}
+
+{% block main %}   
+    <div id="description">
+        <h2>Книга '{{book.name}}'</h2>       
+        <p>{{book.description}}</p>
+        
+        <div id="img_conteiner">
+            <img src="/static/image/{{ book.img }}" alt="">
+        </div>
+        
+    </div>
+{% endblock %}
+

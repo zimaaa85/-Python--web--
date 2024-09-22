@@ -1,0 +1,75 @@
+#nav_bar{
+    display: flex;
+    justify-content: space-around;  /*по горизонтали */
+    height: 50px;
+    align-items: center;  /*по вертикали */
+    /* background-color: green; */
+}
+
+/* стиль для тегов 'а' внутри тега с id nav_bar */
+#nav_bar a{
+    text-decoration: none;
+    background-color: rgba(26, 24, 24, 0.7);
+    width: 200px;
+    padding: 10px 0px;   /*внутреннй отступ внутри контейнера */
+    /* margin: ;  /*внешний отступ от всех отстальных*/
+    text-align: center; /*чтобы текст был по центру */
+    font-size: 30px;
+    color: aquamarine;
+}
+
+.info_container{
+    display: flex;
+    color: aliceblue;    
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.7);     /* 0.5 это прозрачность */   
+    margin: 15px 250px;     /* настраиваем отступы для контейнеров */
+}
+
+.info_container p{
+    font-size: 35px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: aquamarine;
+    margin-right: 250px;
+}
+
+.text_container{
+    display: flex;
+    color: aliceblue;    
+    justify-content: space-between;
+    background-color: rgb(255, 255, 255);     /* 0.5 это прозрачность */   
+    margin: 15px 150px;     /* настраиваем отступы для контейнеров */
+}
+
+.text_container p{
+    font-size: 45px;
+    font-family:'Times New Roman', Times, serif;
+    color: rgba(21, 2, 26, 0.774);
+    text-align: center;
+}
+
+/* обращаемся только к картинкам для их настройки */
+.info_container img{
+    width: 200px;
+    height: 180px;
+    align-items: center;
+    
+}
+
+.img_container img{
+    width: 600px;
+    margin-left: 600px;
+}
+
+body {   
+    background-image: url(/static/image/fon.jpg);
+    background-attachment: fixed;     /* картинка фона зафиксирована */
+    background-size: cover;
+}
+
+body.product1 {
+    background-image: url(/static/image/1gornia.jpg);
+    background-attachment: fixed;     /* картинка фона зафиксирована */
+    background-size: cover;
+}
+

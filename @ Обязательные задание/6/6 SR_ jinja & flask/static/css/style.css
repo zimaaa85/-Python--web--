@@ -1,0 +1,101 @@
+#nav_bar{
+    display: flex;
+    justify-content: space-around;  /*по горизонтали */
+    height: 50px;
+    align-items: center;  /*по вертикали */
+    /* background-color: green; */
+}
+
+/* стиль для тегов 'а' внутри тега с id nav_bar */
+#nav_bar a{
+    text-decoration: none;
+    background-color: rgba(26, 24, 24, 0.7);
+    width: 200px;
+    padding: 10px 0px;   /*внутреннй отступ внутри контейнера */
+    /* margin: ;  /*внешний отступ от всех отстальных*/
+    text-align: center; /*чтобы текст был по центру */
+    font-size: 30px;
+    color: aquamarine;
+}
+
+.info_container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: rgba(0, 0, 0, 0.8);    
+    margin: 15px 250px;     /* настраиваем отступы для контейнеров */
+}
+
+.text_container p{
+    font-size: 45px;
+    font-family:'Times New Roman', Times, serif;
+    color: rgba(21, 2, 26, 0.774);
+    text-align: center;
+}
+
+body {   
+    background-image: url(/static/image/5.jpg);
+     background-attachment: fixed;    /*  картинка фона зафиксирована */
+    /* background-size: 300px; */
+}
+
+.product_card{
+    height: 600px;
+    width: 500px;
+    border: 5px solid rgb(0, 0, 0);
+    margin: 20px;
+}
+
+.card_img img{
+    width: 300px;
+    height: 300px;
+    /* object-fit: contain; */
+}
+
+.card_text{
+   
+    justify-content: space-around;
+}
+.card_text p{
+    font-size: 18px;
+    color: rgb(87, 223, 94);
+}
+
+.card_text h2{
+    font-size: 25px;
+    color: rgb(245, 13, 13);
+}
+
+.card_text h3{
+    font-size: 20px;
+    color: rgb(3, 3, 3);
+}
+#img_container{
+    height: 600px;
+}
+#img_container img{
+    height: 600px;
+    object-fit: contain;
+}
+#description h2{
+    color: rgb(0, 19, 192);
+    font-size: 40px;
+    font-style: italic;
+}
+
+#description p{
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-style:normal;
+}
+
+
+#img_conteiner img{
+    width: 500px;
+    height: 700px;
+    object-fit: contain;
+    margin-left: 200px;
+}
+
+

@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block title %} Список книг {% endblock %}
+
+{% block main %} 
+    <div id="info_container">
+        {% for book in books %}
+        <a href="/book/{{ book.id }}">
+            <div class="product_card">
+                <div class="card_img">
+                    <img src="/static/image/{{book.img}}" alt="">
+                </div>
+                <div class="card_text">
+                    <h2>{{book.name}}</h2>
+                    <h3>Автор: {{book.author}}</h3>
+                    <h3>Количество страниц: {{book.pages}}</h3>                   
+                </div>
+            </div>
+        </a>
+        {% endfor %}
+    </div>
+   
+  
+{% endblock %}

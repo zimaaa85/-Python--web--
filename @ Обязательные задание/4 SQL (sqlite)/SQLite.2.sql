@@ -1,0 +1,9 @@
+CREATE TABLE animals_foods
+(
+  id INTEGER PRIMARY KEY AUTOINCREMENT,  
+  animals_id INTEGER NOT NULL,
+  foods_id INTEGER NOT NULL,
+  quantity INTEGER NOT NULL,
+  FOREIGN KEY (animals_id) REFERENCES animals(id) on DELETE CASCADE,
+  FOREIGN Key (foods_id) REFERENCES foods(id) ON DELETE CASCADE
+);
