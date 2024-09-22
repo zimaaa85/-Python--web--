@@ -1,0 +1,228 @@
+#nav_bar{
+    display: flex;
+    position:sticky;
+    top: 1px;
+    justify-content: space-around;  /*по горизонтали */
+    height: 50px;
+    align-items: center;  /*по вертикали */
+    /* background-color: green; */
+}
+
+/* стиль для тегов 'а' внутри тега с id nav_bar */
+#nav_bar a{    
+    text-decoration: none;
+    background-color: rgba(26, 24, 24, 0.7);
+    width: 200px;
+    padding: 10px 0px;   /*внутреннй отступ внутри контейнера */
+    /* margin: ;  /*внешний отступ от всех отстальных*/
+    text-align: center; /*чтобы текст был по центру */
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+}
+
+.info_container{
+    display: flex;
+    flex-direction: reverse;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: rgba(0, 0, 0, 0.7);    
+    margin: 15px 50px;     /* настраиваем отступы для контейнеров */
+}
+
+.info_container img{
+    width: 300px;
+    height: 300px;
+    margin: 50px;
+}
+
+.info_container h3{
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(255, 255, 255);
+    margin: 25px;
+    margin-top: 10px;
+}
+
+.info_container p{
+    font-size: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(255, 255, 255);
+    margin-left: 50px;
+   margin-right: 50px;
+    margin-top: 1px;
+    display: list-item;
+    /* text-align: -webkit-match-parent; */
+    /* unicode-bidi: isolate */
+}
+
+.text_container p{
+    font-size: 45px;
+    font-family:'Times New Roman', Times, serif;
+    color: rgba(21, 2, 26, 0.774);
+    text-align: center;
+}
+
+.info_text_container{
+    background-color: rgba(175, 173, 168, 0.7);
+}
+
+.info_text_container h2{
+    font-size: 30px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgba(0, 0, 0);
+    text-align: center;
+    margin: 100px;    
+}
+
+.info_text_container h1{
+    font-size: 55px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+.info_text_container h3{
+    font-size: 40px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+body {   
+    background-image: url(/static/image/fon.jpg);
+    background-attachment: fixed;    /*  картинка фона зафиксирована */
+    background-size: cover;
+}
+
+.product_house{
+    height: 700px;
+    width: 450px;
+    border: 5px solid rgb(0, 0, 0);
+    margin: 10px;
+}
+
+.house_img img{
+    width: 350px;
+    height: 320px;
+    /* object-fit: contain; */
+    image-rendering: auto;    
+    border: 1px solid rgb(255, 255, 255);
+    margin: 55px;
+    margin-top: 10px;
+}
+
+#houses_container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: rgba(175, 173, 168, 0.9); 
+    margin: 100px;
+    justify-content: center;
+    /* align-items: center; */
+    text-align: center;
+}
+
+.house_text{
+   
+    justify-content: space-around;
+}
+
+.house_text h2{
+    font-size: 35px;    
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgba(30, 27, 207);
+}
+
+.house_text h3{
+    font-size: 25px;   
+    color: rgb(0, 0, 0);
+}
+
+.house_text h1{
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;   
+    color: rgb(240, 30, 41);
+}
+
+#img_container{
+    height: 600px;
+}
+#img_container img{
+    height: 600px;
+    object-fit: contain;
+}
+
+#description h1{
+    color: rgb(0, 19, 192);
+    font-size: 40px;
+    font-style: italic;
+    text-align: center;
+    background-color: rgba(240, 239, 236, 0.6);
+}
+
+#description h2{
+    color: rgb(0, 19, 192);
+    font-size: 40px;
+    font-style: italic;
+    text-align: center;
+    background-color: rgba(240, 239, 236, 0.6);
+}
+
+#description p{
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    font-style:normal;
+    background-color: rgba(240, 239, 236, 0.8);
+    margin-top: 1px;
+    display: list-item;
+}
+
+#img_conteiner img{
+    width: 500px;
+    height: 700px;
+    object-fit: contain;
+    margin-left: 200px;
+}
+
+#img_conteiner_plans{  
+    text-align: center;  
+}
+
+#img_conteiner_plans img{   
+    height: 570px;   
+}
+
+#img_conteiner_facades{  
+    text-align: center;  
+}
+
+#img_conteiner_facades img{      
+    width: 1800px;
+}
+
+.cover__wrapper {
+    background-color: rgba(252, 252, 251, 0.45);    
+}
+
+.cover__under-title_green {
+    display: flex; 
+    color: #f70404;
+    font-weight: 700;
+    font-size: 55px;    
+}
+
+.cover__wrapper h1 {
+    display: flex; 
+    font-size: 80px;    
+    margin: 0;
+}
+
+.cover__wrapper p {
+    display: flex;    
+    font-size: 45px;
+    font-style:italic;    
+    margin: 0;
+}
+
+

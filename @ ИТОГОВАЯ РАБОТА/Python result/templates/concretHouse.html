@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %} {{ house.name }} {% endblock %}
+
+{% block main %}   
+    <div id="description">
+        <h2>Наименование: "{{house.name}}"</h2>       
+        <p>{{house.description}}</p>       
+        <h1>Cтоимость: {{house.price}}</h1>    
+        
+    <div id="img_conteiner_plans">
+        <img src="/static/image/{{ house.img_plans }}" alt="Изображение не найдено" srcset="">
+    </div>
+
+    <div id="img_conteiner_facades">
+        <img src="/static/image/{{ house.img_facades }}" alt="Изображение не найдено" srcset="">
+    </div>
+        
+    </div>
+{% endblock %}
+

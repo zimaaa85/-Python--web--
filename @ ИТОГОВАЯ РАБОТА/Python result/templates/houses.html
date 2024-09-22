@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block title %} Проекты частных домов с описанием и фото {% endblock %}
+
+{% block main %} 
+    <div id="houses_container">
+        {% for house in houses %}
+        <a href="/house/{{ house.id }}">
+            <div class="product_house">
+                <div class="house_img">
+                    <img src="/static/image/{{ house.img }}" alt="">
+                </div>
+                <div class="house_text">
+                    <h2>{{house.name}}</h2>
+                    <h3>Количество этажей: {{house.floors}}</h3>
+                    <h3>Площадь дома, м2: {{house.square}}</h3>
+                    <h1>Cтоимость: {{house.price}}</h1>                     
+                </div>
+            </div>
+        </a>
+        {% endfor %}
+    </div>
+   
+  
+{% endblock %}
